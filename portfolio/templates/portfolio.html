@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Программист Димитрий | Портфолио{% endblock %}
+{% block content %}
+<main class="px-5 р-80">
+  <h1 class="m-5">Мои работы</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+    {% for project in projects %}
+    <div class="col">
+      <div class="card h-100 bg-primary">
+        <img src="{% static 'img/unknown.png' %}" class="card-img-top" alt="Изображение-заглушка">
+        <div class="card-body">
+          <h5 class="card-title">{{project.title}}</h5>
+          <hr>
+          <p class="card-text">{{project.short_description}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

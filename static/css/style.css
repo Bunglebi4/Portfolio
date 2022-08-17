@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.nav-link{
+  color: #fff;
+}
+
+.nav-link:hover{
+  color: #22A14A;
+}
+
+.main-button{
+  background-color: transparent;
+}
+
+.main-button:hover{
+  background-color: transparent;
+  color: #22A14A;
+  border: 1px solid #22A14A;
+}
