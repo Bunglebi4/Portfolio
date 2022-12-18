@@ -1,2 +1,2 @@
 # Portfolio
-Shitty code for better life
+Shitty code 
